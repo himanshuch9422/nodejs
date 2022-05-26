@@ -1,0 +1,99 @@
+index.js
+
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+
+app.listen(3000, ()=>{
+    console.log('Application Started');
+})
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is a static node js web
+</body>
+</html>
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Himanshu\Desktop\new node> node "c:\Users\Himanshu\Desktop\new node\index.js"
+PS C:\Users\Himanshu\Desktop\new node> node --version
+v16.15.0
+PS C:\Users\Himanshu\Desktop\new node> npm --version
+8.5.5
+PS C:\Users\Himanshu\Desktop\new node> npm initt
+Unknown command: "initt"
+
+Did you mean this?
+    npm init # Create a package.json file
+
+To see a list of supported npm commands, run:
+  npm help
+PS C:\Users\Himanshu\Desktop\new node> npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (new-node)
+version: (1.0.0)
+description: This is a sample project
+entry point: (index.js)
+test command:
+git repository: https://github.com/himanshuch9422/nodejs.git
+keywords:
+author: Himanshu
+license: (ISC)
+About to write to C:\Users\Himanshu\Desktop\new node\package.json:
+
+{
+  "name": "new-node",
+  "version": "1.0.0",
+  "description": "This is a sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+  },
+  "author": "Himanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshuch9422/nodejs/issues"
+  },
+  "homepage": "https://github.com/himanshuch9422/nodejs#readme"
+}
+
+
+Is this OK? (yes) yes
+PS C:\Users\Himanshu\Desktop\new node> npm install express --save
+
+added 57 packages, and audited 58 packages in 6s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Himanshu\Desktop\new node> node index.js 
+Application Started
